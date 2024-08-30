@@ -58,7 +58,7 @@ class GetStartedPage extends StatelessWidget {
                       onPressed: () {
                         Navigator.push(context, MaterialPageRoute(
                           builder: (context) {
-                            return ChooseModePage();
+                            return const ChooseModePage();
                           },
                         ));
                       },
