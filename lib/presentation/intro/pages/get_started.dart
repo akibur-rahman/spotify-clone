@@ -28,7 +28,7 @@ class GetStartedPage extends StatelessWidget {
           SafeArea(
             child: Column(
               children: [
-                const SizedBox(height: 10),
+                const SizedBox(height: 30),
                 Align(
                     alignment: Alignment.topCenter,
                     child: SvgPicture.asset(AppVector.logo)),

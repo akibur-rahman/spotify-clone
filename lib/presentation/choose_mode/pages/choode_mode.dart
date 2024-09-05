@@ -6,6 +6,7 @@ import 'package:spotify/common/widgets/button/intro_button.dart';
 import 'package:spotify/core/configs/assets/app_images.dart';
 import 'package:spotify/core/configs/assets/app_vector.dart';
 import 'package:spotify/core/configs/theme/app_colos.dart';
+import 'package:spotify/presentation/authentication/pages/signup_or_signin.dart';
 import 'package:spotify/presentation/choose_mode/bloc/theme_cubit.dart';
 
 class ChooseModePage extends StatelessWidget {
@@ -31,7 +32,7 @@ class ChooseModePage extends StatelessWidget {
           child: Column(
             children: [
               const SizedBox(
-                height: 10,
+                height: 30,
               ),
               Center(
                 child: SvgPicture.asset(AppVector.logo),
@@ -137,7 +138,13 @@ class ChooseModePage extends StatelessWidget {
               Padding(
                 padding: const EdgeInsets.symmetric(horizontal: 40),
                 child: IntroButton(
-                  onPressed: () {},
+                  onPressed: () {
+                    Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => SignUpOrSignInPage(),
+                        ));
+                  },
                   title: 'Continue',
                 ),
               ),
