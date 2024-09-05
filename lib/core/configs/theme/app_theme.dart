@@ -4,12 +4,12 @@ import 'package:spotify/core/configs/theme/app_colos.dart';
 class AppTheme {
   static final lightTheme = ThemeData(
     brightness: Brightness.light,
-    primaryColor: AppColos.primary,
-    scaffoldBackgroundColor: AppColos.lightBackground,
+    primaryColor: AppColors.primary,
+    scaffoldBackgroundColor: AppColors.lightBackground,
     elevatedButtonTheme: ElevatedButtonThemeData(
       style: ElevatedButton.styleFrom(
           elevation: 0,
-          backgroundColor: AppColos.primary,
+          backgroundColor: AppColors.primary,
           textStyle: const TextStyle(
               fontSize: 16, fontWeight: FontWeight.bold, color: Colors.white),
           shape: RoundedRectangleBorder(
@@ -21,12 +21,12 @@ class AppTheme {
 
   static final darkTheme = ThemeData(
     brightness: Brightness.dark,
-    primaryColor: AppColos.primary,
-    scaffoldBackgroundColor: AppColos.darkBackground,
+    primaryColor: AppColors.primary,
+    scaffoldBackgroundColor: AppColors.darkBackground,
     elevatedButtonTheme: ElevatedButtonThemeData(
       style: ElevatedButton.styleFrom(
           elevation: 0,
-          backgroundColor: AppColos.primary,
+          backgroundColor: AppColors.primary,
           textStyle: const TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
           shape: RoundedRectangleBorder(
             borderRadius: BorderRadius.circular(30),

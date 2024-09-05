@@ -46,7 +46,7 @@ class GetStartedPage extends StatelessWidget {
                     'Listen to high quality music with Spotify. We stream lossless music in .flac format that gives you the best music listening experience.',
                     style: TextStyle(
                         fontWeight: FontWeight.w500,
-                        color: AppColos.grey,
+                        color: AppColors.grey,
                         fontSize: 13),
                     textAlign: TextAlign.center,
                   ),

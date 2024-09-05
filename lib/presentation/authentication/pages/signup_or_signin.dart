@@ -6,6 +6,7 @@ import 'package:spotify/common/widgets/button/intro_button.dart';
 import 'package:spotify/core/configs/assets/app_images.dart';
 import 'package:spotify/core/configs/assets/app_vector.dart';
 import 'package:spotify/core/configs/theme/app_colos.dart';
+import 'package:spotify/presentation/authentication/pages/signin.dart';
 import 'package:spotify/presentation/authentication/pages/signup.dart';
 
 class SignUpOrSignInPage extends StatelessWidget {
@@ -58,7 +59,7 @@ class SignUpOrSignInPage extends StatelessWidget {
                 child: Text(
                   'Spotify is a propietary Swedish audio streaming and media services provider',
                   textAlign: TextAlign.center,
-                  style: TextStyle(color: AppColos.grey, fontSize: 16),
+                  style: TextStyle(color: AppColors.grey, fontSize: 16),
                 ),
               ),
               Row(
@@ -84,7 +85,13 @@ class SignUpOrSignInPage extends StatelessWidget {
                       padding: const EdgeInsets.symmetric(
                           horizontal: 40, vertical: 40),
                       child: TextButton(
-                          onPressed: () {},
+                          onPressed: () {
+                            Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                  builder: (context) => SignInPage(),
+                                ));
+                          },
                           child: Text(
                             'Sign in',
                             style: TextStyle(

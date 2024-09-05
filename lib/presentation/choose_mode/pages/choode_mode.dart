@@ -84,7 +84,7 @@ class ChooseModePage extends StatelessWidget {
                         'Dark Mode',
                         style: TextStyle(
                             fontSize: 16,
-                            color: AppColos.grey,
+                            color: AppColors.grey,
                             fontWeight: FontWeight.bold),
                       ),
                     ],
@@ -125,7 +125,7 @@ class ChooseModePage extends StatelessWidget {
                         'Light Mode',
                         style: TextStyle(
                             fontSize: 16,
-                            color: AppColos.grey,
+                            color: AppColors.grey,
                             fontWeight: FontWeight.bold),
                       ),
                     ],
